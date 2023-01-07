@@ -1,0 +1,278 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 19552233200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Can check out list of cart that user choosing",
+        "description": "",
+        "id": "checkout;can-check-out-list-of-cart-that-user-choosing",
+        "after": [
+          {
+            "result": {
+              "duration": 1785287000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1284530000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User open the website sauce demo",
+            "match": {
+              "location": "LoginSteps.verifyDisplay()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7285105500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User input \"standard_user\" ad userName and input \"secret_sauce\" as password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 12
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 50
+                }
+              ],
+              "location": "LoginSteps.inputCredential(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 133452000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "verify display landing page",
+            "match": {
+              "location": "PurchaseSteps.verifyLandingPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3379500500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User sort Name Z to A",
+            "match": {
+              "location": "PurchaseSteps.selectProductContainer()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2165514100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User pick itemSauce Labs Onesie",
+            "match": {
+              "location": "PurchaseSteps.clickItemBasket1()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2146932900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User pick item Test.allTheThings T-Shirt Red",
+            "match": {
+              "location": "PurchaseSteps.clickItemBasket2()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5251553900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User click shopping cart",
+            "match": {
+              "location": "PurchaseSteps.clickShoppingCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 268897400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Verify All item",
+            "match": {
+              "location": "PurchaseSteps.verifyAllItem()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3234019900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Remove item 2 T-Shirt Red",
+            "match": {
+              "location": "PurchaseSteps.removeItem2()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5328314000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Click button checkout",
+            "match": {
+              "location": "PurchaseSteps.clickCheckout()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9171004200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User input \"Mukhlis\" as firstName and input \"Anshori\" as lastName and input \"65134\" as ZIP code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mukhlis",
+                  "offset": 12
+                },
+                {
+                  "val": "Anshori",
+                  "offset": 45
+                },
+                {
+                  "val": "65134",
+                  "offset": 77
+                }
+              ],
+              "location": "PurchaseSteps.inputDataDiri(String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 113222900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "verify display item total",
+            "match": {
+              "location": "PurchaseSteps.displayItemTotal()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 98775600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "verify display Tax",
+            "match": {
+              "location": "PurchaseSteps.displayTax()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 118469500,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "verify display Total Payment",
+            "match": {
+              "location": "PurchaseSteps.displayTotalPayment()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5314256400,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Click button finish",
+            "match": {
+              "location": "PurchaseSteps.clickFinish()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 847906900,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Verify THANK YOU FOR YOUR ORDER displayed",
+            "match": {
+              "location": "PurchaseSteps.verivyOrderFinished()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5261844800,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "verify value THANK YOU FOR YOUR ORDER",
+            "match": {
+              "location": "PurchaseSteps.cekValueThanks()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "CheckOut",
+    "description": "User can click button tambah item",
+    "id": "checkout",
+    "keyword": "Feature",
+    "uri": "features/CheckOut.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@CheckOut"
+      }
+    ]
+  }
+]
