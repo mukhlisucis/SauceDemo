@@ -18,4 +18,5 @@
     Then verify display Total Payment
     And Click button finish
     And Verify THANK YOU FOR YOUR ORDER displayed
-    Then verify value THANK YOU FOR YOUR ORDER
+    Then Verify value Thank you displayed "THANK YOU FOR YOUR ORDER"
+

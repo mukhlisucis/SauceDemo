@@ -28,6 +28,7 @@ public class InventoriPage {
     @FindBy(xpath = "//select[@class='product_sort_container']")
     private WebElement selectContainer ;
 
+
     @FindBy (xpath = "//button[@id='checkout']")
     private WebElement clickCheckoutButton ;
 

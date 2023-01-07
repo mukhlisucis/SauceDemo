@@ -39,6 +39,11 @@ public class CheckInformation {
 
     @FindBy (xpath ="//div[@class='summary_total_label']")
     private WebElement totalPayment ;
+
+    @FindBy (xpath = "//h2[@class='complete-header']" )
+    private WebElement thanksText ;
+
+
     public void setFirstName(String firstNameUser){
 
         firstName.sendKeys(firstNameUser);
@@ -76,6 +81,14 @@ public class CheckInformation {
         totalPayment.isDisplayed();
         return true ;
     }
+
+    public String getThankyouText(){
+
+        return thanksText.getText();
+    }
+
+
+
 
 
 }

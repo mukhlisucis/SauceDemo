@@ -33,5 +33,6 @@ public class LoginSteps {
     public void getErrorText(String errorText){
         LoginPage loginpage = new LoginPage(webDriver);
         Assert.assertEquals(errorText, loginpage.getErrorText());
+        System.out.println(errorText);
     }
 }

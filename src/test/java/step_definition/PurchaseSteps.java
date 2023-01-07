@@ -28,6 +28,12 @@ public class PurchaseSteps {
         String a = "Name (Z to A)";
         inventoriPage.selectProductContainer(a);
         Thread.sleep(3000);
+
+    }
+    @Then ("verify display landing page")
+    public void verifyLandingPage(){
+        InventoriPage inventoriPage = new InventoriPage(webDriver);
+        Assert.assertTrue(inventoriPage.displayLandingPage());
     }
     @And("User pick itemSauce Labs Onesie")
     public void clickItemBasket1() throws InterruptedException {
@@ -102,23 +108,20 @@ public class PurchaseSteps {
         isiInformasi.setClickFinish();
         Thread.sleep(5000) ;
     }
-    @Then("verify value THANK YOU FOR YOUR ORDER")
-    public void cekValueThanks()throws InterruptedException {
-        InventoriPage inventoriPage = new InventoriPage(webDriver);
-        String thankYou = webDriver.findElement(By.xpath("//h2[@class='complete-header']")).getText();
-        System.out.println(thankYou);
-        Thread.sleep(4000);
-    }
+
     @And("Verify THANK YOU FOR YOUR ORDER displayed")
     public void verivyOrderFinished()throws InterruptedException{
         CheckInformation isiInformasi = new CheckInformation(webDriver);
         isiInformasi.setVerifyOrder();
 
     }
-    @Then ("verify display landing page")
-    public void verifyLandingPage(){
-        InventoriPage inventoriPage = new InventoriPage(webDriver);
-        Assert.assertTrue(inventoriPage.displayLandingPage());
+
+    @Then ("Verify value Thank you displayed \"(.*)\"")
+    public void getThanksText(String ThanksText) {
+        CheckInformation cekThanks = new CheckInformation(webDriver) ;
+        Assert.assertEquals(ThanksText, cekThanks.getThankyouText() );
+        System.out.println(ThanksText);
+
     }
 
 

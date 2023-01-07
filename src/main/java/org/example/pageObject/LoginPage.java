@@ -46,6 +46,7 @@ public class LoginPage {
     }
 
     public String getErrorText(){
+
         return errorText.getText() ;
     }
 

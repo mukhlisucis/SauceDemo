@@ -13,7 +13,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 19552233200,
+  "duration": 16346906300,
   "status": "passed"
 });
 formatter.scenario({
@@ -106,14 +106,14 @@ formatter.step({
 });
 formatter.step({
   "line": 21,
-  "name": "verify value THANK YOU FOR YOUR ORDER",
+  "name": "Verify value Thank you displayed \"THANK YOU FOR YOUR ORDER\"",
   "keyword": "Then "
 });
 formatter.match({
   "location": "LoginSteps.verifyDisplay()"
 });
 formatter.result({
-  "duration": 1284530000,
+  "duration": 728259100,
   "status": "passed"
 });
 formatter.match({
@@ -130,63 +130,63 @@ formatter.match({
   "location": "LoginSteps.inputCredential(String,String)"
 });
 formatter.result({
-  "duration": 7285105500,
+  "duration": 6563046600,
   "status": "passed"
 });
 formatter.match({
   "location": "PurchaseSteps.verifyLandingPage()"
 });
 formatter.result({
-  "duration": 133452000,
+  "duration": 147181500,
   "status": "passed"
 });
 formatter.match({
   "location": "PurchaseSteps.selectProductContainer()"
 });
 formatter.result({
-  "duration": 3379500500,
+  "duration": 3351312000,
   "status": "passed"
 });
 formatter.match({
   "location": "PurchaseSteps.clickItemBasket1()"
 });
 formatter.result({
-  "duration": 2165514100,
+  "duration": 2131868400,
   "status": "passed"
 });
 formatter.match({
   "location": "PurchaseSteps.clickItemBasket2()"
 });
 formatter.result({
-  "duration": 2146932900,
+  "duration": 2133425900,
   "status": "passed"
 });
 formatter.match({
   "location": "PurchaseSteps.clickShoppingCart()"
 });
 formatter.result({
-  "duration": 5251553900,
+  "duration": 5280664000,
   "status": "passed"
 });
 formatter.match({
   "location": "PurchaseSteps.verifyAllItem()"
 });
 formatter.result({
-  "duration": 268897400,
+  "duration": 518999000,
   "status": "passed"
 });
 formatter.match({
   "location": "PurchaseSteps.removeItem2()"
 });
 formatter.result({
-  "duration": 3234019900,
+  "duration": 3203332900,
   "status": "passed"
 });
 formatter.match({
   "location": "PurchaseSteps.clickCheckout()"
 });
 formatter.result({
-  "duration": 5328314000,
+  "duration": 5213549300,
   "status": "passed"
 });
 formatter.match({
@@ -207,53 +207,59 @@ formatter.match({
   "location": "PurchaseSteps.inputDataDiri(String,String,String)"
 });
 formatter.result({
-  "duration": 9171004200,
+  "duration": 9098526400,
   "status": "passed"
 });
 formatter.match({
   "location": "PurchaseSteps.displayItemTotal()"
 });
 formatter.result({
-  "duration": 113222900,
+  "duration": 68576100,
   "status": "passed"
 });
 formatter.match({
   "location": "PurchaseSteps.displayTax()"
 });
 formatter.result({
-  "duration": 98775600,
+  "duration": 67900100,
   "status": "passed"
 });
 formatter.match({
   "location": "PurchaseSteps.displayTotalPayment()"
 });
 formatter.result({
-  "duration": 118469500,
+  "duration": 59602500,
   "status": "passed"
 });
 formatter.match({
   "location": "PurchaseSteps.clickFinish()"
 });
 formatter.result({
-  "duration": 5314256400,
+  "duration": 5239796500,
   "status": "passed"
 });
 formatter.match({
   "location": "PurchaseSteps.verivyOrderFinished()"
 });
 formatter.result({
-  "duration": 847906900,
+  "duration": 63969100,
   "status": "passed"
 });
 formatter.match({
-  "location": "PurchaseSteps.cekValueThanks()"
+  "arguments": [
+    {
+      "val": "THANK YOU FOR YOUR ORDER",
+      "offset": 34
+    }
+  ],
+  "location": "PurchaseSteps.getThanksText(String)"
 });
 formatter.result({
-  "duration": 5261844800,
+  "duration": 58049200,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1785287000,
+  "duration": 4444527800,
   "status": "passed"
 });
 });
